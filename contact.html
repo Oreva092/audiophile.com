@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiophile - ContactPage</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="https://kit.fontawesome.com/b55bbba4f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <h3 class="header">audiophile</h3>
+            <ul class="navLink">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="cart.html">cart</a></li><!--<i class="fa-solid fa-cart-shopping">-->
+            </ul>
+            <button onclick="menuLink()" class="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+    <section>
+        <form class="formContainer">
+            <div class="form">
+                <h3>CHECKOUT</h3>
+                <p>
+                    BILLING DETAILS
+                </p>
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" name="name" class="nameInput" placeholder="Oreva Edegbe" onfocus="this.placeholder = ''">
+
+                <label for="email"><strong>Email Address</strong></label>
+                <input type="text" name="email" class="emailInput" placeholder="orevaedegbe@gmail.com" onfocus="this.placeholder = ''">
+
+                <div>
+                    <label for="number"><strong>Phone Number</strong></label>
+                    <input type="number" name="number" class="numberInput" placeholder="08126680282" onfocus="this.placeholder = ''">
+                </div>
+                <div>
+                    <p>
+                        SHIPPING INFO
+                    </p>
+                    <label for="address"><strong>Address</strong></label>
+                    <input type="text" name="address" class="addressInput" placeholder="1137 Wilkams Avenue" onfocus="this.placeholder = ''">
+                    <div>
+                        <label for="zipCode"><strong>ZIP Code</strong></label>
+                        <input type="number" name="zipCode" class="zipCodeInput" placeholder="10001" onfocus="this.placeholder = ''">
+
+                        <label for="city"><strong>City</strong></label>
+                        <input type="text" name="city" class="cityInput" placeholder="Lagos" onfocus="this.placeholder = ''">
+
+                        <div>
+                            <label for="country"><strong>Country</strong></label>
+                            <input type="text" name="country" class="countryInput" placeholder="Nigeria" onfocus="this.placeholder = ''">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="footerLinkContainer">
+            <h3>audiophile</h3>
+            <nav class="footerBar">
+                <ul class="footerLink">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footerWriteUpContainer">
+            <div class="footerWriteUpContent">
+                <p class="para1">
+                    Audiophile is an all in one stop to fulfill your audio heeds. we're a small team <br> of music lovers and sound specialists who are devoted to helping you get the <br> most out of personal audio. Come and visit our demo facility - we're open 7 <br> days a week. 
+                </p>
+                <div class="iconContainer">
+                    <span><i class="fa-brands fa-facebook-f" style="color: white; margin-right: 5px;cursor: pointer;"></i></span>
+                    <span><i class="fa-brands fa-twitter" style="color: white; cursor: pointer;"></i></span>
+                    <span><i class="fa-brands fa-instagram" style="color: white; margin-left: 5px; cursor: pointer;"></i></span>
+                </div>
+            </div>
+            <div class="copyrightContainer">
+                <p class="para2">
+                    Copyright &copy; Audiophile website 2024
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    padding: 10px;
+}
+header h3{
+    color: white;
+    border-bottom: 3px solid rgb(141, 52, 0);
+}
+header .navBar{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1280px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+.navBar .navLink{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navBar .navLink li{
+    list-style: none;
+}
+.navBar .navLink li a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.navBar .navLink li a:hover{
+    color: rgb(141, 52, 0);
+    border-bottom: 1px solid rgb(141, 52, 0);
+}
+.navBar .navLink .joinBtn{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navBar .navLink .joinBtn:hover{
+    background-color: rgb(141, 52, 0);
+}
+.navBar .navLink .joinBtn a:hover{
+    color: white;
+    border-bottom: none;
+}
+.menuBtn{
+    color: white;
+    background-color: rgb(141, 52, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.menuBtn:hover{
+    background-color: rgb(194, 72, 2);
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.formContainer .form{
+    height: 600px;
+    background-color: white;
+    padding: 30px;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.form h3{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 140px;
+    border-radius: 12px;
+    background: rgb(194, 72, 2);
+}
+.form p{
+    color: rgb(141, 52, 0);
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+input[type="text"]{
+    height: 40px;
+    border: 1.5px solid #c7bebe;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 0 9px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+input[type="number"]{
+    height: 40px;
+    border: 1.5px solid #c7bebe;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    margin-bottom: 80px;
+    outline: none;
+    padding: 0 9px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+.nameInput{
+    margin-right: 10px;
+}
+.addressInput{
+    width: 530px;
+}
+.zipCodeInput{
+    margin-right: 60px;
+}
+input[type="text"]:focus, input[type="number"]:focus{
+    border-color: rgb(194, 72, 2);
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 70vh;
+    margin-top: 100px;
+}
+.footerLinkContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1480px;
+    padding-top: 90px;
+    overflow: hidden;
+}
+.footerLinkContainer h3{
+    color: white;
+    border-bottom: 3px solid rgb(141, 52, 0);
+}
+.footerBar .footerLink{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.footerLink li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.footerLink li a:hover{
+    color: rgb(141, 52, 0);
+    border-bottom: 1px solid rgb(141, 52, 0);
+} 
+.footerWriteUpContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1480px;
+    gap: 250px;
+    margin-top: 40px;
+}
+.copyrightContainer{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 760px){
+    header h3{
+        text-align: center;
+    }
+    .navBar .navLink{
+        display: none;
+    }
+    .navBar .menuBtn{
+        display: block;
+    }
+    .formContainer .form{
+        height: 900px;
+        width: 370px;
+    }
+    .form label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form input[type="text"]{
+        width: 300px;
+    }
+    .form input[type="number"]{
+        width: 300px;
+    }
+    .footerLinkContainer h3{
+        margin-left: 100px;
+    }
+    .footerBar .footerLink{
+        display: none;
+    }
+    .footerWriteUpContent{
+        display: block;
+    }
+    .footerWriteUpContent p{
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 20px;    
+    }
+    .iconContainer{
+        text-align: center;
+    }
+    .copyrightContainer p{
+        margin-left: -150px;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <h3 class="header">audiophile</h3>
+            <ul class="navLink">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="cart.html">cart</a></li><!--<i class="fa-solid fa-cart-shopping">-->
+            </ul>
+            <button onclick="menuLink()" class="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+    <section class="section">
+        <form class="formContainer">
+            <div class="form">
+                <h3>PAYMENT DETAILS</h3>
+                <div class="flexForm">
+                    <div>
+                        <label for="payment"><strong>Payment Method</strong></label>
+                    </div>
+                    <div>
+                        <div class="radio">
+                            <input type="radio" onclick="radioFunction()"><span class="radioContent">e-Money</span>
+                        </div>
+                        <div class="radioCon">
+                            <input type="radio" onclick="radioConFunction()"><span class="radioContent1">Cash on Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="money"><strong>e-Money Number</strong></label>
+                        <br>
+                        <input type="number" class="moneyInputHolder" name="money" placeholder="238521993" onfocus="this.placeholder = ''">
+                    </div>
+                    <div>
+                        <label for="pin"><strong>e-Money Pin</strong></label>
+                        <br>
+                        <input type="number" name="pin" class="pinHolder" placeholder="6891" onfocus="this.placeholder = ''">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <h3>SUMMARY</h3>
+            <div class="container1">
+                <div>
+                    <img src="images/headphone2.jpg" alt="headphone" class="headphoneImage" width="50" height="50">
+                </div>
+                <div>
+                    <span class="headphoneWriteUp">XX99 MK 11 </span> <br> <span class="amount">$2.999</span>
+                </div>
+                <div>
+                    <span class="small">x1</span>
+                </div>
+            </div>
+            <div class="container1">
+                <div>
+                    <img src="images/hp2.jpg" alt="headphone" class="headphoneImage" width="50" height="50">
+                </div>
+                <div>
+                    <span class="headphoneWriteUp">XX59 MK 11</span> <br> <span class="amount">$899</span>
+                </div>
+                <div>
+                    <span class="small">x1</span>
+                </div>
+            </div>
+            <div class="container1">
+                <div>
+                    <img src="images/earpods.jpg" alt="headphone" class="headphoneImage" width="50" height="50">
+                </div>
+                <div>
+                    <span class="headphoneWriteUp">ZYX1 MK 11</span> <br> <span class="amount">$599</span>
+                </div>
+                <div>
+                    <span class="small">x1</span>
+                </div>
+            </div>
+            <div>
+                <div class="para1">
+                    <p class="total">
+                        TOTAL
+                    </p>
+                    <p>
+                        $5,396
+                    </p>
+                </div>
+                <div class="para2">
+                    <p class="shipping">
+                        SHIPPING
+                    </p>
+                    <p>
+                        $50  
+                    </p>
+                </div>
+                <div class="para3">
+                    <p class="vat">
+                        VAT <br> (INCLUDED)
+                    </p>
+                    <p>
+                        $1,079
+                    </p>
+                </div>
+                <div class="para4">
+                    <p class="grand">
+                        GRAND <br> TOTAL
+                    </p>
+                    <p style="color: rgb(141, 52, 0);">
+                        $5,446
+                    </p>
+                </div>
+            </div>
+            <div class="btnContainer">
+                <button class="btn">CONTINUE & PAY</button>
+            </div>
+        </div>    
+    </section>
+    <footer>
+        <div class="footerLinkContainer">
+            <h3>audiophile</h3>
+            <nav class="footerBar">
+                <ul class="footerLink">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="service.html">Service</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footerWriteUpContainer">
+            <div class="footerWriteUpContent">
+                <p class="Para1">
+                    Audiophile is an all in one stop to fulfill your audio heeds. We're a small team <br> of music lovers and sound specialists who are devoted to helping you get the <br> most out of personal audio. Come and visit our demo facility - we're open 7 <br> days a week
+                </p>
+                <div class="iconContainer">
+                    <span><i class="fa-brands fa-facebook-f" style="color: white; margin-right: 5px;cursor: pointer;"></i></span>
+                    <span><i class="fa-brands fa-twitter" style="color: white; cursor: pointer;"></i></span>
+                    <span><i class="fa-brands fa-instagram" style="color: white; margin-left: 5px; cursor: pointer;"></i></span>
+                </div>
+            </div>
+            <div class="copyrightContainer">
+                <p class="Para2">
+                    Copyright &copy; Audiophile website 2024
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="home.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
